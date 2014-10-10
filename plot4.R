@@ -25,6 +25,7 @@ plot4 <- function () {
     
     #bottomright plot
     plot (Global_reactive_power ~ DateTime, type = 'l', xlab = "datetime", lwd = 0.8)
+    par (mfrow = c(1,1))
   })
 }
 
