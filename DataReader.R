@@ -16,7 +16,7 @@ read_data <- function(file) {
   system.time(full_data <- fread (input = "../../data/household_power_consumption.txt",
                       header = TRUE,
                       sep = ";",
-                      na.strings = c("?",";?",";?;"),
+                      na.strings = c("?"),
                       colClasses = col_cls,
                       data.table = FALSE))
   #class(full_data) # "data.frame"
