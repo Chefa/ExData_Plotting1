@@ -20,7 +20,8 @@ plot4 <- function () {
     lines (data$Sub_metering_1 ~ data$DateTime, )
     lines (data$Sub_metering_2 ~ data$DateTime, col = "red")
     lines (data$Sub_metering_3 ~ data$DateTime, col = "blue")
-    legend("topright",  col = c("black", "red", "blue"), legend = colnames(data[0,7:9]), lty = 'solid')
+    legend("topright",  col = c("black", "red", "blue"), legend = colnames(data[0,7:9]), lty = 'solid',
+           bty = "n")
     
     #bottomright plot
     plot (Global_reactive_power ~ DateTime, type = 'l', xlab = "datetime", lwd = 0.8)
